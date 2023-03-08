@@ -1,0 +1,31 @@
+#:set color1 (1, 0, 0)
+#:set color2 (0, 1, 0)
+#:set color3 (0, 0, 1)
+#:set size (10, 10)
+#:import px main.px
+
+
+
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        BoxLayout:
+            size: size
+            canvas: 
+                Color:
+                    rgb: color1
+                Rectangle:
+                    pos: self.pos
+                    size: size
+        Label:
+            text: ' - color1'
+    Label:
+        pos: (100,20)
+        text: ' - color1'
+    Label:
+        pos: (100,20)
+        text: ' - color1'
+    Label:
+        pos: (100,20)
+        text: ' - color1'
